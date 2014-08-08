@@ -48,7 +48,7 @@ VERSION_INFO = (0, 3, 8)
 #:
 #: .. versionchanged:: 0.1.9
 #:    Becomes string.  (It was :class:`tuple` before.)
-VERSION = '{0}.{1}.{2}'.format(*VERSION_INFO)
+VERSION = '{0}.{1}.{2}bugfix'.format(*VERSION_INFO)
 
 if libmagick:
     c_magick_version = ctypes.c_size_t()

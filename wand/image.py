@@ -983,6 +983,8 @@ class BaseImage(Resource):
             act = ALPHA_CHANNEL_TYPES.index('activate')
         elif alpha == False:
             act = ALPHA_CHANNEL_TYPES.index('deactivate')
+        elif alpha in ALPHA_CHANNEL_TYPES:
+            act = ALPHA_CHANNEL_TYPES.index(alpha)
         else:
             raise TypeError('alpha_channel must be bool, not ' +
                             repr(alpha))
